@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <!-- ====== Area Mesin (head): metadata & tautan ====== -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Kopi Kuliah - ruang ngopi hangat untuk mahasiswa & pekerja. Kopi specialty, WiFi kencang, dan colokan di tiap meja. Ngopi dulu, tugas kelar kemudian.">
+  <title>Beranda | Kopi Kuliah</title>
+
+  <!-- Tautan font Google: Playfair Display (judul) + Source Sans 3 (isi) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <!-- Tautan CSS eksternal -->
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+  <!-- ================= NAVBAR (komponen reusable) ================= -->
+  <header class="site-header">
+    <nav class="navbar" aria-label="Navigasi utama">
+      <a href="index.html" class="logo">☕ Kopi Kuliah</a>
+
+      <!-- Tombol hamburger: hanya tampil di layar kecil -->
+      <button class="nav-toggle" id="navToggle" aria-label="Buka menu navigasi" aria-expanded="false">
+        <span class="nav-toggle-bar"></span>
+        <span class="nav-toggle-bar"></span>
+        <span class="nav-toggle-bar"></span>
+      </button>
+
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html" class="nav-link is-active">Beranda</a></li>
+        <li><a href="menu.html" class="nav-link">Menu</a></li>
+        <li><a href="kontak.html" class="nav-link">Kontak</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- ================= HERO ================= -->
+    <section class="hero">
+      <div class="hero-text">
+        <h1 class="hero-title">Ngopi Dulu, Tugas Kelar Kemudian.</h1>
+        <p class="hero-subtext">
+          Ruang hangat untuk mahasiswa dan pekerja yang butuh fokus. Kopi <em>specialty</em>,
+          colokan di tiap sudut, dan WiFi kencang &mdash; semua siap menemani harimu di Kopi Kuliah.
+        </p>
+        <div class="hero-actions">
+          <a href="menu.html" class="btn btn-primary">Lihat Menu</a>
+          <a href="kontak.html" class="btn btn-ghost">Cari Lokasi Kami</a>
+        </div>
+      </div>
+      <div class="hero-image" role="img" aria-label="Suasana hangat di dalam Kopi Kuliah"></div>
+    </section>
+
+    <!-- ================= 3 KARTU SOROTAN ================= -->
+    <section class="section">
+      <header class="section-head">
+        <h2 class="section-title">Sorotan Minggu Ini</h2>
+        <p class="section-subtitle">Tiga alasan kenapa Kopi Kuliah jadi tempat nugas favorit.</p>
+      </header>
+
+      <div class="highlight-grid">
+        <article class="card-highlight">
+          <span class="card-icon" aria-hidden="true">🎓</span>
+          <h3 class="card-title">Promo Mahasiswa</h3>
+          <p>Tunjukkan KTM dan dapatkan potongan <strong>15%</strong> untuk semua minuman, setiap hari Senin sampai Jumat.</p>
+        </article>
+
+        <article class="card-highlight">
+          <span class="card-icon" aria-hidden="true">🔥</span>
+          <h3 class="card-title">Menu Terlaris Minggu Ini</h3>
+          <p>Es Kopi Susu Skripsi jadi favorit semua orang &mdash; manis gula aren yang pas untuk teman nugas.</p>
+        </article>
+
+        <article class="card-highlight">
+          <span class="card-icon" aria-hidden="true">🔌</span>
+          <h3 class="card-title">Spot Nugas Nyaman</h3>
+          <p>WiFi kencang, colokan di tiap meja, dan suasana tenang yang bikin betah fokus dari pagi sampai sore.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- ================= TENTANG + JAM OPERASIONAL ================= -->
+    <section class="section about-section">
+      <div class="about-text">
+        <h2 class="section-title">Tentang Kopi Kuliah</h2>
+        <p>
+          Kopi Kuliah lahir dari satu kebiasaan sederhana: ngopi sambil mengerjakan tugas. Kami percaya
+          tempat ngopi yang baik bukan cuma soal rasa, tapi soal ruang yang membuatmu betah berlama-lama,
+          fokus, dan pulang dengan tugas yang kelar.
+        </p>
+        <p>
+          Sejak 2019, kami menyajikan kopi <em>specialty</em> dengan biji pilihan, diracik hangat ala sore hari.
+          Dari mahasiswa yang mengejar deadline sampai pekerja yang butuh jeda, semua punya kursi di sini.
+          Datang sebagai tamu, pulang sebagai langganan.
+        </p>
+
+        <ul class="stats">
+          <li class="stat"><span class="stat-number">4.9★</span><span class="stat-label">Rating Pelanggan</span></li>
+          <li class="stat"><span class="stat-number">120+</span><span class="stat-label">Pilihan Menu</span></li>
+          <li class="stat"><span class="stat-number">2019</span><span class="stat-label">Tahun Berdiri</span></li>
+        </ul>
+      </div>
+
+      <div class="hours-card">
+        <h3 class="hours-title">Jam Operasional</h3>
+        <table class="hours-table">
+          <caption class="visually-hidden">Jam buka Kopi Kuliah setiap hari</caption>
+          <tbody>
+            <tr><th scope="row">Senin</th><td>08.00 &ndash; 22.00</td></tr>
+            <tr><th scope="row">Selasa</th><td>08.00 &ndash; 22.00</td></tr>
+            <tr><th scope="row">Rabu</th><td>08.00 &ndash; 22.00</td></tr>
+            <tr><th scope="row">Kamis</th><td>08.00 &ndash; 22.00</td></tr>
+            <tr><th scope="row">Jumat</th><td>08.00 &ndash; 23.00</td></tr>
+            <tr><th scope="row">Sabtu</th><td>09.00 &ndash; 23.00</td></tr>
+            <tr><th scope="row">Minggu</th><td>09.00 &ndash; 21.00</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ================= FOOTER (komponen reusable) ================= -->
+  <footer class="site-footer">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <p class="footer-logo">☕ Kopi Kuliah</p>
+        <p class="footer-tagline">Ngopi Dulu, Tugas Kelar Kemudian.</p>
+      </div>
+
+      <nav class="footer-nav" aria-label="Navigasi footer">
+        <h4 class="footer-heading">Jelajahi</h4>
+        <ul>
+          <li><a href="index.html">Beranda</a></li>
+          <li><a href="menu.html">Menu</a></li>
+          <li><a href="kontak.html">Kontak</a></li>
+        </ul>
+      </nav>
+
+      <div class="footer-contact">
+        <h4 class="footer-heading">Kontak</h4>
+        <address class="footer-address">
+          Jl. Margonda Raya No. 88,<br>
+          Pondok Cina, Beji, Depok 16424<br>
+          <a href="tel:+6281234567890">+62 812-3456-7890</a><br>
+          <a href="mailto:halo@kopikuliah.id">halo@kopikuliah.id</a>
+        </address>
+        <ul class="social-links">
+          <li><a href="https://instagram.com/kopikuliah.id" target="_blank" rel="noopener">Instagram</a></li>
+          <li><a href="https://tiktok.com/@kopikuliah" target="_blank" rel="noopener">TikTok</a></li>
+          <li><a href="https://wa.me/6281234567890" target="_blank" rel="noopener">WhatsApp</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>&copy; 2026 Kopi Kuliah &mdash; <em>Blueprint</em> by Brewgram Studio.</p>
+    </div>
+  </footer>
+
+  <!-- Tautan JavaScript ringan (hamburger menu) -->
+  <script src="assets/js/main.js" defer></script>
+</body>
+</html>

@@ -18,7 +18,7 @@
   <header class="site-header">
     <nav class="navbar" aria-label="Navigasi utama">
       <a href="index.html" class="logo">☕ Kopi Kuliah</a>
-      <button class="nav-toggle" id="navToggle" aria-label="Buka menu navigasi" aria-expanded="false">
+      <button class="nav-toggle" id="navToggle" aria-label="Buka menu navigasi" aria-controls="navLinks" aria-expanded="false">
         <span class="nav-toggle-bar"></span>
         <span class="nav-toggle-bar"></span>
         <span class="nav-toggle-bar"></span>
@@ -26,7 +26,7 @@
       <ul class="nav-links" id="navLinks">
         <li><a href="index.html" class="nav-link">Beranda</a></li>
         <li><a href="menu.html" class="nav-link">Menu</a></li>
-        <li><a href="kontak.html" class="nav-link is-active">Kontak</a></li>
+        <li><a href="kontak.html" class="nav-link is-active" aria-current="page">Kontak</a></li>
       </ul>
     </nav>
   </header>
@@ -56,6 +56,24 @@
           <dd><a href="mailto:halo@kopikuliah.id">halo@kopikuliah.id</a></dd>
         </dl>
         <p class="map-caption"><em>Seberang gerbang kampus, lantai dasar, mudah dijangkau jalan kaki maupun KRL.</em></p>
+
+        <a href="https://wa.me/6281234567890" class="btn btn-primary" target="_blank" rel="noopener">💬 Chat via WhatsApp</a>
+
+        <div class="hours-card">
+          <h2 class="hours-title">Jam Operasional</h2>
+          <table class="hours-table">
+            <caption class="visually-hidden">Jam buka Kopi Kuliah setiap hari</caption>
+            <tbody>
+              <tr><th scope="row">Senin</th><td>08.00 &ndash; 22.00</td></tr>
+              <tr><th scope="row">Selasa</th><td>08.00 &ndash; 22.00</td></tr>
+              <tr><th scope="row">Rabu</th><td>08.00 &ndash; 22.00</td></tr>
+              <tr><th scope="row">Kamis</th><td>08.00 &ndash; 22.00</td></tr>
+              <tr><th scope="row">Jumat</th><td>08.00 &ndash; 23.00</td></tr>
+              <tr><th scope="row">Sabtu</th><td>09.00 &ndash; 23.00</td></tr>
+              <tr><th scope="row">Minggu</th><td>09.00 &ndash; 21.00</td></tr>
+            </tbody>
+          </table>
+        </div>
       </div>
     </section>
 

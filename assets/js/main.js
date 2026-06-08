@@ -14,6 +14,7 @@ var navLinks = document.getElementById('navLinks');
 if (navToggle && navLinks) {
   navToggle.addEventListener('click', function () {
     var terbuka = navLinks.classList.toggle('is-open');
+    navToggle.classList.toggle('is-open', terbuka); // animasi ikon jadi X
     // Perbarui status aksesibilitas tombol
     navToggle.setAttribute('aria-expanded', terbuka ? 'true' : 'false');
   });

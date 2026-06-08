@@ -159,6 +159,7 @@ textarea:focus-visible {
 }
 
 .navbar {
+  position: relative;
   /* 1. Aktifkan layout fleksibel */
   display: flex;
   /* 2. Logo kiri, navigasi kanan */
@@ -202,6 +203,18 @@ textarea:focus-visible {
   height: 2px;
   background-color: #FBF6EF;
   border-radius: 2px;
+  transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+/* Hamburger berubah jadi tanda X saat menu terbuka */
+.nav-toggle.is-open .nav-toggle-bar:nth-child(1) {
+  transform: translateY(7px) rotate(45deg);
+}
+.nav-toggle.is-open .nav-toggle-bar:nth-child(2) {
+  opacity: 0;
+}
+.nav-toggle.is-open .nav-toggle-bar:nth-child(3) {
+  transform: translateY(-7px) rotate(-45deg);
 }
 
 /* Daftar link: tersembunyi di mobile, muncul saat hamburger ditekan */
@@ -216,6 +229,14 @@ textarea:focus-visible {
 
 .nav-links.is-open {
   display: flex;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  background-color: #5B3A29;
+  padding: 8px 20px 16px;
+  box-shadow: 0 8px 16px rgba(46, 33, 27, 0.12);
+  z-index: 10;
 }
 
 .nav-link {
@@ -258,8 +279,14 @@ textarea:focus-visible {
 
 .hero-actions {
   display: flex;
+  flex-direction: column;
   flex-wrap: wrap;
   gap: 12px;
+}
+
+/* Di mobile, kedua tombol hero penuh selebar layar */
+.hero-actions .btn {
+  width: 100%;
 }
 
 .hero-image {
@@ -573,6 +600,14 @@ textarea:focus-visible {
   color: #6B5B4F;
 }
 
+.location-info .btn {
+  margin: 16px 0;
+}
+
+.location-info .hours-card {
+  margin-top: 8px;
+}
+
 /* Form */
 .contact-form {
   max-width: 560px;
@@ -739,6 +774,15 @@ textarea:focus-visible {
     padding: 56px 24px;
   }
 
+  /* Tombol hero kembali sejajar di layar lebih besar */
+  .hero-actions {
+    flex-direction: row;
+  }
+
+  .hero-actions .btn {
+    width: auto;
+  }
+
   /* Kartu sorotan & menu jadi 2 kolom */
   .card-highlight {
     flex: 1 1 calc(50% - 8px);
@@ -761,12 +805,17 @@ textarea:focus-visible {
     display: none;
   }
 
-  .nav-links {
+  .nav-links,
+  .nav-links.is-open {
     display: flex;
+    position: static;
     width: auto;
     flex-direction: row;
     gap: 8px;
     margin-top: 0;
+    padding: 0;
+    background: none;
+    box-shadow: none;
   }
 
   /* Tipografi naik di layar besar */
@@ -825,7 +874,7 @@ textarea:focus-visible {
   /* Kontak: peta kiri, info kanan */
   .location-section {
     flex-direction: row;
-    align-items: stretch;
+    align-items: flex-start;
   }
 
   .map-placeholder {

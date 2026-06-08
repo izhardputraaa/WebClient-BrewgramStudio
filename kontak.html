@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Hubungi & kunjungi Kopi Kuliah di Jl. Margonda Raya No. 88, Depok. Kirim kritik/saran lewat form, atau sapa kami di Instagram, TikTok, dan WhatsApp.">
+  <title>Kontak | Kopi Kuliah</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+  <!-- ================= NAVBAR ================= -->
+  <header class="site-header">
+    <nav class="navbar" aria-label="Navigasi utama">
+      <a href="index.html" class="logo">☕ Kopi Kuliah</a>
+      <button class="nav-toggle" id="navToggle" aria-label="Buka menu navigasi" aria-expanded="false">
+        <span class="nav-toggle-bar"></span>
+        <span class="nav-toggle-bar"></span>
+        <span class="nav-toggle-bar"></span>
+      </button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html" class="nav-link">Beranda</a></li>
+        <li><a href="menu.html" class="nav-link">Menu</a></li>
+        <li><a href="kontak.html" class="nav-link is-active">Kontak</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- ================= PETA + INFO LOKASI ================= -->
+    <section class="section location-section">
+      <div class="map-placeholder" role="img" aria-label="Peta lokasi Kopi Kuliah di Jl. Margonda Raya No. 88">
+        <span class="map-pin" aria-hidden="true">📍</span>
+        <p class="map-label">Peta &mdash; Jl. Margonda Raya No. 88</p>
+        <a class="map-link" href="https://maps.google.com/?q=Jl.+Margonda+Raya+No.+88+Depok" target="_blank" rel="noopener">Buka di Google Maps</a>
+      </div>
+
+      <div class="location-info">
+        <h1 class="section-title">Mampir ke Kopi Kuliah</h1>
+        <p>
+          Ada pertanyaan, mau pesan tempat untuk kerja kelompok, atau sekadar ingin tahu promo hari ini?
+          Hubungi kami atau langsung mampir &mdash; pintu kami selalu terbuka hangat untukmu.
+        </p>
+        <dl class="info-list">
+          <dt>Alamat</dt>
+          <dd>Jl. Margonda Raya No. 88, Pondok Cina, Beji, Depok, Jawa Barat 16424</dd>
+          <dt>Telepon</dt>
+          <dd><a href="tel:+6281234567890">+62 812-3456-7890</a></dd>
+          <dt>Email</dt>
+          <dd><a href="mailto:halo@kopikuliah.id">halo@kopikuliah.id</a></dd>
+        </dl>
+        <p class="map-caption"><em>Seberang gerbang kampus, lantai dasar, mudah dijangkau jalan kaki maupun KRL.</em></p>
+      </div>
+    </section>
+
+    <!-- ================= FORM KRITIK / SARAN ================= -->
+    <section class="section form-section">
+      <header class="section-head">
+        <h2 class="section-title">Kirim Kritik &amp; Saran</h2>
+        <p class="section-subtitle">Masukanmu membantu kami menyajikan ruang nugas yang lebih nyaman.</p>
+      </header>
+
+      <form class="contact-form" id="contactForm" action="#" method="post" novalidate>
+        <div class="form-field">
+          <label for="nama">Nama</label>
+          <input type="text" id="nama" name="nama" placeholder="Nama lengkapmu" required minlength="3">
+        </div>
+
+        <div class="form-field">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" placeholder="nama@email.com" required>
+        </div>
+
+        <div class="form-field">
+          <label for="pesan">Pesan</label>
+          <textarea id="pesan" name="pesan" rows="5" placeholder="Tulis kritik atau saranmu di sini..." required minlength="10"></textarea>
+        </div>
+
+        <button type="submit" class="btn btn-primary btn-block">Kirim Pesan</button>
+
+        <!-- Pesan sukses: tampil setelah form valid dikirim -->
+        <p class="form-success" id="formSuccess" hidden>✅ Terima kasih! Pesanmu sudah kami terima.</p>
+      </form>
+    </section>
+
+    <!-- ================= TAUTAN SOSIAL ================= -->
+    <section class="section social-section">
+      <h2 class="section-title">Sapa Kami di Media Sosial</h2>
+      <ul class="social-links social-links-lg">
+        <li><a href="https://instagram.com/kopikuliah.id" target="_blank" rel="noopener">📸 Instagram &mdash; @kopikuliah.id</a></li>
+        <li><a href="https://tiktok.com/@kopikuliah" target="_blank" rel="noopener">🎵 TikTok &mdash; @kopikuliah</a></li>
+        <li><a href="https://wa.me/6281234567890" target="_blank" rel="noopener">💬 WhatsApp &mdash; +62 812-3456-7890</a></li>
+      </ul>
+    </section>
+
+  </main>
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="site-footer">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <p class="footer-logo">☕ Kopi Kuliah</p>
+        <p class="footer-tagline">Ngopi Dulu, Tugas Kelar Kemudian.</p>
+      </div>
+      <nav class="footer-nav" aria-label="Navigasi footer">
+        <h4 class="footer-heading">Jelajahi</h4>
+        <ul>
+          <li><a href="index.html">Beranda</a></li>
+          <li><a href="menu.html">Menu</a></li>
+          <li><a href="kontak.html">Kontak</a></li>
+        </ul>
+      </nav>
+      <div class="footer-contact">
+        <h4 class="footer-heading">Kontak</h4>
+        <address class="footer-address">
+          Jl. Margonda Raya No. 88,<br>
+          Pondok Cina, Beji, Depok 16424<br>
+          <a href="tel:+6281234567890">+62 812-3456-7890</a><br>
+          <a href="mailto:halo@kopikuliah.id">halo@kopikuliah.id</a>
+        </address>
+        <ul class="social-links">
+          <li><a href="https://instagram.com/kopikuliah.id" target="_blank" rel="noopener">Instagram</a></li>
+          <li><a href="https://tiktok.com/@kopikuliah" target="_blank" rel="noopener">TikTok</a></li>
+          <li><a href="https://wa.me/6281234567890" target="_blank" rel="noopener">WhatsApp</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 Kopi Kuliah &mdash; <em>Blueprint</em> by Brewgram Studio.</p>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,19 @@
+# Sistem operasi
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editor / IDE
+.vscode/
+.idea/
+*.swp
+*~
+
+# Log & sementara
+*.log
+.cache/
+
+# Dependensi (untuk fase React pasca-UTS)
+node_modules/
+dist/
+build/

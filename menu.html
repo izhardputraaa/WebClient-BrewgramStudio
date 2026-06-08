@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Daftar menu Kopi Kuliah: Coffee, Non-Coffee, dan Pastry dengan harga jelas. Saring per kategori untuk menemukan minuman favoritmu.">
+  <title>Menu | Kopi Kuliah</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+  <!-- ================= NAVBAR ================= -->
+  <header class="site-header">
+    <nav class="navbar" aria-label="Navigasi utama">
+      <a href="index.html" class="logo">☕ Kopi Kuliah</a>
+      <button class="nav-toggle" id="navToggle" aria-label="Buka menu navigasi" aria-expanded="false">
+        <span class="nav-toggle-bar"></span>
+        <span class="nav-toggle-bar"></span>
+        <span class="nav-toggle-bar"></span>
+      </button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html" class="nav-link">Beranda</a></li>
+        <li><a href="menu.html" class="nav-link is-active">Menu</a></li>
+        <li><a href="kontak.html" class="nav-link">Kontak</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- ================= HEADER MENU + FILTER ================= -->
+    <section class="section menu-intro">
+      <header class="section-head">
+        <h1 class="section-title">Menu Kopi Kuliah</h1>
+        <p class="section-subtitle">
+          Diracik hangat untuk menemani nugas. Harga sudah termasuk satu tempat ternyaman di kota.
+        </p>
+      </header>
+
+      <div class="filter-bar" role="group" aria-label="Saring menu per kategori">
+        <button class="filter-button is-active" data-filter="all" type="button">Semua</button>
+        <button class="filter-button" data-filter="coffee" type="button">Coffee</button>
+        <button class="filter-button" data-filter="non-coffee" type="button">Non-Coffee</button>
+        <button class="filter-button" data-filter="pastry" type="button">Pastry</button>
+      </div>
+    </section>
+
+    <!-- ================= GRID MENU ================= -->
+    <section class="section menu-section">
+      <div class="menu-grid" id="menuGrid">
+
+        <!-- ---- Coffee ---- -->
+        <article class="menu-card" data-category="coffee">
+          <div class="menu-thumb thumb-coffee">
+            <span class="menu-emoji" aria-hidden="true">🧋</span>
+            <span class="badge-status">Terlaris</span>
+          </div>
+          <div class="menu-body">
+            <div class="menu-card-head">
+              <h3 class="menu-name">Es Kopi Susu Skripsi</h3>
+              <span class="badge-price">Rp 22.000</span>
+            </div>
+            <p class="menu-desc">Espresso, susu segar, dan gula aren yang manisnya pas untuk menemani revisi bab demi bab.</p>
+          </div>
+        </article>
+
+        <article class="menu-card" data-category="coffee">
+          <div class="menu-thumb thumb-coffee">
+            <span class="menu-emoji" aria-hidden="true">☕</span>
+          </div>
+          <div class="menu-body">
+            <div class="menu-card-head">
+              <h3 class="menu-name">Americano Begadang</h3>
+              <span class="badge-price">Rp 20.000</span>
+            </div>
+            <p class="menu-desc">Dua shot espresso pekat dengan air dingin, teman setia menembus deadline tengah malam.</p>
+          </div>
+        </article>
+
+        <article class="menu-card" data-category="coffee">
+          <div class="menu-thumb thumb-coffee">
+            <span class="menu-emoji" aria-hidden="true">☕</span>
+          </div>
+          <div class="menu-body">
+            <div class="menu-card-head">
+              <h3 class="menu-name">Cappuccino Cum Laude</h3>
+              <span class="badge-price">Rp 26.000</span>
+            </div>
+            <p class="menu-desc">Espresso seimbang dengan foam susu lembut bertabur cokelat, senikmat IPK sempurna.</p>
+          </div>
+        </article>
+
+        <article class="menu-card" data-category="coffee">
+          <div class="menu-thumb thumb-coffee">
+            <span class="menu-emoji" aria-hidden="true">🥛</span>
+            <span class="badge-status">Promo</span>
+          </div>
+          <div class="menu-body">
+            <div class="menu-card-head">
+              <h3 class="menu-name">Latte Asistensi</h3>
+              <span class="badge-price">Rp 27.000</span>
+            </div>
+            <p class="menu-desc">Espresso halus berpadu susu creamy, tenang menemani sesi bimbingan yang panjang.</p>
+          </div>
+        </article>
+
+        <article class="menu-card" data-category="coffee">
+          <div class="menu-thumb thumb-coffee">
+            <span class="menu-emoji" aria-hidden="true">🍮</span>
+          </div>
+          <div class="menu-body">
+            <div class="menu-card-head">
+              <h3 class="menu-name">Caramel Macchiato Magang</h3>
+              <span class="badge-price">Rp 30.000</span>
+            </div>
+            <p class="menu-desc">Lapisan karamel manis di atas espresso dan susu, manjakan diri usai shift magang.</p>
+          </div>
+        </article>
+
+        <!-- ---- Non-Coffee ---- -->
+        <article class="menu-card" data-category="non-coffee">
+          <div class="menu-thumb thumb-noncoffee">
+            <span class="menu-emoji" aria-hidden="true">🍵</span>
+            <span class="badge-status">Terlaris</span>
+          </div>
+          <div class="menu-body">
+            <div class="menu-card-head">
+              <h3 class="menu-name">Matcha Latte Mahasiswa</h3>
+              <span class="badge-price">Rp 28.000</span>
+            </div>
+            <p class="menu-desc">Matcha premium dengan susu lembut, hijau menyegarkan untuk otak yang butuh fokus.</p>
+          </div>
+        </article>
+
+        <article class="menu-card" data-category="non-coffee">
+          <div class="menu-thumb thumb-noncoffee">
+            <span class="menu-emoji" aria-hidden="true">🍫</span>
+          </div>
+          <div class="menu-body">
+            <div class="menu-card-head">
+              <h3 class="menu-name">Cokelat Panas Kos-Kosan</h3>
+              <span class="badge-price">Rp 24.000</span>
+            </div>
+            <p class="menu-desc">Cokelat hangat kental yang memeluk hangat di sore hujan saat rindu rumah.</p>
+          </div>
+        </article>
+
+        <article class="menu-card" data-category="non-coffee">
+          <div class="menu-thumb thumb-noncoffee">
+            <span class="menu-emoji" aria-hidden="true">🌹</span>
+            <span class="badge-status">Baru</span>
+          </div>
+          <div class="menu-body">
+            <div class="menu-card-head">
+              <h3 class="menu-name">Red Velvet Wisuda</h3>
+              <span class="badge-price">Rp 26.000</span>
+            </div>
+            <p class="menu-desc">Susu red velvet creamy yang manisnya pantas merayakan momen-momen spesialmu.</p>
+          </div>
+        </article>
+
+        <article class="menu-card" data-category="non-coffee">
+          <div class="menu-thumb thumb-noncoffee">
+            <span class="menu-emoji" aria-hidden="true">🍋</span>
+          </div>
+          <div class="menu-body">
+            <div class="menu-card-head">
+              <h3 class="menu-name">Lemon Tea Semester</h3>
+              <span class="badge-price">Rp 18.000</span>
+            </div>
+            <p class="menu-desc">Teh dingin segar berpadu lemon, ringan menyegarkan di antara dua jam kuliah.</p>
+          </div>
+        </article>
+
+        <!-- ---- Pastry ---- -->
+        <article class="menu-card" data-category="pastry">
+          <div class="menu-thumb thumb-pastry">
+            <span class="menu-emoji" aria-hidden="true">🥐</span>
+            <span class="badge-status">Terlaris</span>
+          </div>
+          <div class="menu-body">
+            <div class="menu-card-head">
+              <h3 class="menu-name">Croissant Presentasi</h3>
+              <span class="badge-price">Rp 23.000</span>
+            </div>
+            <p class="menu-desc">Croissant butter renyah berlapis-lapis, gurih mengganjal perut sebelum tampil di depan kelas.</p>
+          </div>
+        </article>
+
+        <article class="menu-card" data-category="pastry">
+          <div class="menu-thumb thumb-pastry">
+            <span class="menu-emoji" aria-hidden="true">🍌</span>
+          </div>
+          <div class="menu-body">
+            <div class="menu-card-head">
+              <h3 class="menu-name">Banana Bread Begadang</h3>
+              <span class="badge-price">Rp 21.000</span>
+            </div>
+            <p class="menu-desc">Roti pisang lembut moist yang manisnya pas sebagai bekal lembur sampai pagi.</p>
+          </div>
+        </article>
+
+        <article class="menu-card" data-category="pastry">
+          <div class="menu-thumb thumb-pastry">
+            <span class="menu-emoji" aria-hidden="true">🌀</span>
+            <span class="badge-status">Baru</span>
+          </div>
+          <div class="menu-body">
+            <div class="menu-card-head">
+              <h3 class="menu-name">Cinnamon Roll Kelompok</h3>
+              <span class="badge-price">Rp 25.000</span>
+            </div>
+            <p class="menu-desc">Gulungan kayu manis hangat berlapis glaze, paling enak dibagi saat kerja kelompok.</p>
+          </div>
+        </article>
+
+        <article class="menu-card" data-category="pastry">
+          <div class="menu-thumb thumb-pastry">
+            <span class="menu-emoji" aria-hidden="true">🍫</span>
+          </div>
+          <div class="menu-body">
+            <div class="menu-card-head">
+              <h3 class="menu-name">Brownies Beasiswa</h3>
+              <span class="badge-price">Rp 22.000</span>
+            </div>
+            <p class="menu-desc">Brownies cokelat fudgy padat yang memuaskan, hadiah kecil untuk usaha kerasmu.</p>
+          </div>
+        </article>
+
+      </div>
+
+      <!-- Empty state: tampil bila filter tak punya hasil -->
+      <p class="menu-empty" id="menuEmpty" hidden>Belum ada menu di kategori ini.</p>
+    </section>
+
+  </main>
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="site-footer">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <p class="footer-logo">☕ Kopi Kuliah</p>
+        <p class="footer-tagline">Ngopi Dulu, Tugas Kelar Kemudian.</p>
+      </div>
+      <nav class="footer-nav" aria-label="Navigasi footer">
+        <h4 class="footer-heading">Jelajahi</h4>
+        <ul>
+          <li><a href="index.html">Beranda</a></li>
+          <li><a href="menu.html">Menu</a></li>
+          <li><a href="kontak.html">Kontak</a></li>
+        </ul>
+      </nav>
+      <div class="footer-contact">
+        <h4 class="footer-heading">Kontak</h4>
+        <address class="footer-address">
+          Jl. Margonda Raya No. 88,<br>
+          Pondok Cina, Beji, Depok 16424<br>
+          <a href="tel:+6281234567890">+62 812-3456-7890</a><br>
+          <a href="mailto:halo@kopikuliah.id">halo@kopikuliah.id</a>
+        </address>
+        <ul class="social-links">
+          <li><a href="https://instagram.com/kopikuliah.id" target="_blank" rel="noopener">Instagram</a></li>
+          <li><a href="https://tiktok.com/@kopikuliah" target="_blank" rel="noopener">TikTok</a></li>
+          <li><a href="https://wa.me/6281234567890" target="_blank" rel="noopener">WhatsApp</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 Kopi Kuliah &mdash; <em>Blueprint</em> by Brewgram Studio.</p>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js" defer></script>
+</body>
+</html>

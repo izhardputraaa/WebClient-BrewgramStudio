@@ -12,10 +12,10 @@
 | No | Nama | NIM | Peran |
 |----|------|-----|-------|
 | 1 | Ghattan Abdul Jabbar | 25120300008 | UI/UX Designer |
-| 1 | Halimah Sukmawaty | 25120300037 | UI/UX Designer |
-| 2 | Haris Mauladi | 25120300015 | Frontend Developer / Git Manager |
-| 2 | Izhar Rahman Dwiputra | 25120300032 | Frontend Developer / Git Manager |
-| 3 | Herlangga Sapoetra | 25120300001 | Presenter / Analyst |
+| 2 | Halimah Sukmawaty | 25120300037 | UI/UX Designer |
+| 3 | Haris Mauladi | 25120300015 | Frontend Developer / Git Manager |
+| 4 | Izhar Rahman Dwiputra | 25120300032 | Frontend Developer / Git Manager |
+| 5 | Herlangga Sapoetra | 25120300001 | Presenter / Analyst |
 
 - **Mata Kuliah:** Web Client Development (WCD06)
 - **Dosen Pengampu:** Reza Fahmi Alviandy
@@ -42,7 +42,8 @@ Sesuai instruksi UTS, kami bertindak sebagai sebuah **Web Agency** yang memprese
 |------|--------|
 | 🌐 **Live Demo (GitHub Pages)** | https://izhardputraaa.github.io/WebClient-BrewgramStudio/ |
 | 🎨 **Wireframe (Figma)** | https://www.figma.com/design/jsoKjCBeQ79BIL2tQq2WWi |
-| 📊 **Slide Presentasi (Canva)** | _akan diperbarui_ |
+| 📊 **Slide Presentasi (Canva)** | https://www.canva.com/d/fJStJQbDMh4_WSp |
+| 📄 **Deck PDF (offline)** | [docs/Kopi-Kuliah-Deck.pdf](docs/Kopi-Kuliah-Deck.pdf) |
 
 ---
 
@@ -75,7 +76,8 @@ WebClient-BrewgramStudio/
 │   ├── design-system.md      # Palet warna, tipografi, komponen
 │   ├── wireframe-spec.md     # Spesifikasi wireframe Desktop & Mobile
 │   ├── panduan-figma.md      # Cara membaca & melanjutkan file Figma
-│   └── skrip-presentasi.md   # Naskah presentasi 15 menit
+│   ├── skrip-presentasi.md   # Naskah presentasi 15 menit
+│   └── Kopi-Kuliah-Deck.pdf  # Ekspor PDF deck Canva (offline)
 ├── .gitignore
 └── README.md
 ```

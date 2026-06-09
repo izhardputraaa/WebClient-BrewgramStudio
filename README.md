@@ -42,7 +42,7 @@ Sesuai instruksi UTS, kami bertindak sebagai sebuah **Web Agency** yang memprese
 |------|--------|
 | 🌐 **Live Demo (GitHub Pages)** | https://izhardputraaa.github.io/WebClient-BrewgramStudio/ |
 | 🎨 **Wireframe (Figma)** | https://www.figma.com/design/jsoKjCBeQ79BIL2tQq2WWi |
-| 📊 **Slide Presentasi (Canva)** | https://www.canva.com/d/fJStJQbDMh4_WSp |
+| 📊 **Slide Presentasi (Canva)** | https://www.canva.com/design/DAHL_2W3udE/Cuz3YsvnNReGB2y1g7rYtw/edit |
 | 📄 **Deck PDF (offline)** | [docs/Kopi-Kuliah-Deck.pdf](docs/Kopi-Kuliah-Deck.pdf) |
 
 ---

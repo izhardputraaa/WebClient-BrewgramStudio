@@ -74,3 +74,6 @@ Nilai konkret agar developer tidak menebak:
 3. **Navigation** — navbar konsisten, tanpa jalan buntu. ✔
 4. **Content** — dikelompokkan logis (chunking per kategori). ✔
 5. **CTA** — satu CTA primary per layar. ✔
+
+
+ **tes** — tes

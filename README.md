@@ -29,10 +29,12 @@
 
 Sesuai instruksi UTS, kami bertindak sebagai sebuah **Web Agency** yang mempresentasikan **Rancangan Sistem (Blueprint)** kepada Client sebelum dibangun ulang menggunakan **React.js** pada tahap berikutnya (UAS). Karena itu, struktur halaman sengaja dirancang **modular dan reusable** (navbar, footer, kartu menu) agar transisi dari blueprint ke komponen React berjalan mulus.
 
-### Tiga Halaman Utama
-1. **Beranda (`index.html`)** — Hero + ajakan, 3 kartu sorotan (promo & menu terlaris), tentang singkat, dan jam operasional.
-2. **Menu (`menu.html`)** — Katalog 13 produk dalam grid, dengan **filter kategori** (Coffee / Non-Coffee / Pastry).
-3. **Kontak (`kontak.html`)** — Peta lokasi, formulir kritik/saran (validasi HTML5), dan tautan media sosial.
+### Lima Halaman Utama
+1. **Beranda (`index.html`)** — Hero, 3 kartu sorotan, **section "Kabar Terbaru & Promo" (konten dikelola lewat CMS)**, tentang singkat, dan jam operasional.
+2. **Menu (`menu.html`)** — Katalog 13 produk berfoto, dilengkapi **filter kategori** (Coffee / Non-Coffee / Pastry).
+3. **Tentang (`tentang.html`)** — Cerita kafe, nilai-nilai, dan statistik.
+4. **Galeri (`galeri.html`)** — Galeri foto suasana & sajian.
+5. **Kontak (`kontak.html`)** — Peta lokasi, jam operasional, formulir kritik/saran (validasi HTML5), tombol WhatsApp, dan media sosial.
 
 ---
 
@@ -53,7 +55,7 @@ Sesuai materi yang diajarkan (tahap pra-React):
 
 - **HTML5 Semantic** — `lang="id"`, satu `<h1>` per halaman, `<nav>`/`<main>`/`<footer>`, `<table>`/`<dl>`, form dengan ikatan `label`+`id`.
 - **CSS** — penataan dengan **Flexbox** (komponen) + **CSS Grid** (kerangka menu), *Mobile-First* via media query, `box-sizing: border-box` (Reset Universal), penamaan kelas *single-class kebab-case*.
-- **JavaScript ringan** — hamburger menu, filter kategori, dan pesan sukses form.
+- **JavaScript ringan** — hamburger menu, filter kategori, pesan sukses form, dan render kartu "Kabar Terbaru" dari `data.js` (simulasi konten yang dikelola CMS, tanpa backend).
 
 > Tanpa framework, bundler, atau dependensi build — murni HTML/CSS/JS agar mudah dijelaskan & dipresentasikan.
 
@@ -63,14 +65,17 @@ Sesuai materi yang diajarkan (tahap pra-React):
 
 ```
 WebClient-BrewgramStudio/
-├── index.html            # Halaman Beranda
-├── menu.html             # Halaman Menu (katalog + filter)
+├── index.html            # Halaman Beranda (+ section CMS Kabar Terbaru)
+├── menu.html             # Halaman Menu (katalog berfoto + filter)
+├── tentang.html          # Halaman Tentang Kami
+├── galeri.html           # Halaman Galeri foto
 ├── kontak.html           # Halaman Kontak (peta + form + sosial)
 ├── assets/
 │   ├── css/
 │   │   └── style.css     # Seluruh gaya (Flexbox + Grid, Mobile-First)
 │   ├── js/
-│   │   └── main.js       # Interaksi ringan (hamburger, filter, form)
+│   │   ├── data.js       # Data "Kabar Terbaru" (simulasi konten CMS)
+│   │   └── main.js       # Interaksi (hamburger, filter, form, render Kabar)
 │   └── img/              # (cadangan aset gambar)
 ├── docs/
 │   ├── design-system.md      # Palet warna, tipografi, komponen

@@ -4,6 +4,7 @@
   <!-- ====== Area Mesin (head): metadata & tautan ====== -->
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#5B3A29">
   <meta name="description" content="Kopi Kuliah - ruang ngopi hangat untuk mahasiswa & pekerja. Kopi specialty, WiFi kencang, dan colokan di tiap meja. Ngopi dulu, tugas kelar kemudian.">
   <title>Beranda | Kopi Kuliah</title>
 
@@ -20,7 +21,7 @@
   <!-- ================= NAVBAR (komponen reusable) ================= -->
   <header class="site-header">
     <nav class="navbar" aria-label="Navigasi utama">
-      <a href="index.html" class="logo">☕ Kopi Kuliah</a>
+      <a href="index.html" class="logo">Kopi Kuliah</a>
 
       <!-- Tombol hamburger: hanya tampil di layar kecil -->
       <button class="nav-toggle" id="navToggle" aria-label="Buka menu navigasi" aria-controls="navLinks" aria-expanded="false">
@@ -32,6 +33,8 @@
       <ul class="nav-links" id="navLinks">
         <li><a href="index.html" class="nav-link is-active" aria-current="page">Beranda</a></li>
         <li><a href="menu.html" class="nav-link">Menu</a></li>
+        <li><a href="tentang.html" class="nav-link">Tentang</a></li>
+        <li><a href="galeri.html" class="nav-link">Galeri</a></li>
         <li><a href="kontak.html" class="nav-link">Kontak</a></li>
       </ul>
     </nav>
@@ -64,23 +67,33 @@
 
       <div class="highlight-grid">
         <article class="card-highlight">
-          <span class="card-icon" aria-hidden="true">🎓</span>
+          <img class="card-media" src="https://images.unsplash.com/photo-1521017432531-fbd92d768814?auto=format&fit=crop&w=600&q=70" alt="" loading="lazy" onerror="this.remove()">
           <h3 class="card-title">Promo Mahasiswa</h3>
           <p>Tunjukkan KTM dan dapatkan potongan <strong>15%</strong> untuk semua minuman, setiap hari Senin sampai Jumat.</p>
         </article>
 
         <article class="card-highlight">
-          <span class="card-icon" aria-hidden="true">🔥</span>
+          <img class="card-media" src="https://images.unsplash.com/photo-1461023058943-07fcbe16d735?auto=format&fit=crop&w=600&q=70" alt="" loading="lazy" onerror="this.remove()">
           <h3 class="card-title">Menu Terlaris Minggu Ini</h3>
           <p>Es Kopi Susu Skripsi jadi favorit semua orang &mdash; manis gula aren yang pas untuk teman nugas.</p>
         </article>
 
         <article class="card-highlight">
-          <span class="card-icon" aria-hidden="true">🔌</span>
+          <img class="card-media" src="https://images.unsplash.com/photo-1554118811-1e0d58224f24?auto=format&fit=crop&w=600&q=70" alt="" loading="lazy" onerror="this.remove()">
           <h3 class="card-title">Spot Nugas Nyaman</h3>
           <p>WiFi kencang, colokan di tiap meja, dan suasana tenang yang bikin betah fokus dari pagi sampai sore.</p>
         </article>
       </div>
+    </section>
+
+    <!-- ================= KABAR TERBARU / PROMO (konten dikelola CMS) ================= -->
+    <section class="section news-section">
+      <header class="section-head">
+        <h2 class="section-title">Kabar Terbaru &amp; Promo</h2>
+        <p class="section-subtitle">Info promo &amp; acara terbaru di Kopi Kuliah.</p>
+        <span class="cms-badge">Konten dikelola lewat CMS</span>
+      </header>
+      <div class="news-grid" id="newsGrid" aria-live="polite"></div>
     </section>
 
     <!-- ================= TENTANG + JAM OPERASIONAL ================= -->
@@ -128,7 +141,7 @@
   <footer class="site-footer">
     <div class="footer-grid">
       <div class="footer-brand">
-        <p class="footer-logo">☕ Kopi Kuliah</p>
+        <p class="footer-logo">Kopi Kuliah</p>
         <p class="footer-tagline">Ngopi Dulu, Tugas Kelar Kemudian.</p>
       </div>
 
@@ -137,6 +150,8 @@
         <ul>
           <li><a href="index.html">Beranda</a></li>
           <li><a href="menu.html">Menu</a></li>
+          <li><a href="tentang.html">Tentang</a></li>
+          <li><a href="galeri.html">Galeri</a></li>
           <li><a href="kontak.html">Kontak</a></li>
         </ul>
       </nav>
@@ -162,7 +177,8 @@
     </div>
   </footer>
 
-  <!-- Tautan JavaScript ringan (hamburger menu) -->
+  <!-- Tautan JavaScript ringan (data CMS + interaksi) -->
+  <script src="assets/js/data.js" defer></script>
   <script src="assets/js/main.js" defer></script>
 </body>
 </html>

@@ -65,3 +65,19 @@ if (contactForm) {
     }
   });
 }
+
+// ===== 4. KABAR TERBARU (render kartu dari data "CMS") =====
+var newsGrid = document.getElementById('newsGrid');
+if (newsGrid && typeof KABAR_TERBARU !== 'undefined') {
+  var html = '';
+  KABAR_TERBARU.forEach(function (item) {
+    html += '<article class="news-card">'
+      + '<div class="news-thumb"><img src="' + item.gambar + '" alt="' + item.judul + '" loading="lazy" onerror="this.remove()"></div>'
+      + '<div class="news-body">'
+      + '<time class="news-date">' + item.tanggal + '</time>'
+      + '<h3 class="news-title">' + item.judul + '</h3>'
+      + '<p class="news-text">' + item.ringkasan + '</p>'
+      + '</div></article>';
+  });
+  newsGrid.innerHTML = html;
+}

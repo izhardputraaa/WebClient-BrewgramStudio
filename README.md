@@ -5,7 +5,7 @@
 
 ---
 
-## Nama Kelompok: Brewgram Studio
+## Nama Kelompok 3: Brewgram Studio
 
 **Anggota Kelompok:**
 

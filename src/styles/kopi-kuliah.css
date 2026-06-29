@@ -1,0 +1,618 @@
+/* =========================================================
+   KOPI KULIAH - kopi-kuliah.css
+   Warna dan font brand. Nilai ditulis langsung (literal),
+   layout dan grid memakai Bootstrap 5.
+   Palet: Espresso #5B3A29, Terracotta #C8763A, Krem #FBF6EF,
+   Teks #2E211B, Muted #6B5B4F, Border #E7DCCF.
+   ========================================================= */
+
+/* ===== DASAR ===== */
+body {
+  font-family: "Source Sans 3", system-ui, sans-serif;
+  color: #2E211B;
+  background-color: #FBF6EF;
+  line-height: 1.6;
+}
+
+h1, h2, h3, .logo, .section-title, .hero-title, .hours-title, .stat-number {
+  font-family: "Playfair Display", Georgia, serif;
+}
+
+.section {
+  padding: 40px 0;
+}
+
+.section-head {
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+.section-title {
+  font-size: 28px;
+  color: #5B3A29;
+  margin-bottom: 8px;
+}
+
+.section-subtitle {
+  color: #6B5B4F;
+  margin: 0 auto;
+  max-width: 620px;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
+
+/* ===== TOMBOL (memakai .btn Bootstrap, warna disesuaikan brand) ===== */
+.btn-primary,
+.btn-ghost {
+  border-radius: 999px;
+  padding: 10px 22px;
+  font-weight: 600;
+  min-height: 44px;
+}
+
+.btn-primary {
+  background-color: #C8763A;
+  border: 1px solid #C8763A;
+  color: #fff;
+}
+
+.btn-primary:hover,
+.btn-primary:focus {
+  background-color: #b5652f;
+  border-color: #b5652f;
+  color: #fff;
+}
+
+.btn-ghost {
+  background-color: transparent;
+  border: 2px solid #5B3A29;
+  color: #5B3A29;
+}
+
+.btn-ghost:hover {
+  background-color: #5B3A29;
+  color: #fff;
+}
+
+.btn-block {
+  width: 100%;
+}
+
+/* ===== NAVBAR ===== */
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 1030;
+  background-color: #FBF6EF;
+  border-bottom: 1px solid #E7DCCF;
+}
+
+.navbar-kk {
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 14px 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.logo {
+  font-weight: 700;
+  font-size: 24px;
+  color: #5B3A29;
+  text-decoration: none;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 6px;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-link {
+  display: inline-block;
+  padding: 8px 14px;
+  border-radius: 999px;
+  color: #2E211B;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.nav-link:hover {
+  background-color: #F0E6D8;
+}
+
+.nav-link.is-active {
+  background-color: #5B3A29;
+  color: #fff;
+}
+
+/* Garis fokus jelas saat navigasi pakai keyboard (Tab) */
+.nav-link:focus-visible,
+.btn:focus-visible,
+.filter-button:focus-visible {
+  outline: 2px solid #C8763A;
+  outline-offset: 2px;
+}
+
+/* Hamburger: disembunyikan di layar besar */
+.nav-toggle {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 8px;
+}
+
+.nav-toggle-bar {
+  display: block;
+  width: 24px;
+  height: 2px;
+  background-color: #5B3A29;
+}
+
+/* ===== HERO ===== */
+.hero {
+  padding: 48px 0;
+}
+
+.hero-title {
+  font-size: 32px;
+  color: #5B3A29;
+  margin-bottom: 16px;
+}
+
+.hero-subtext {
+  color: #6B5B4F;
+  font-size: 18px;
+  margin-bottom: 24px;
+}
+
+.hero-actions {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.hero-image {
+  min-height: 320px;
+  border-radius: 20px;
+  background-image: url("https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb?auto=format&fit=crop&w=900&q=70");
+  background-size: cover;
+  background-position: center;
+}
+
+/* ===== KARTU SOROTAN ===== */
+.card-highlight {
+  background-color: #fff;
+  border: 1px solid #E7DCCF;
+  border-radius: 12px;
+  padding: 16px;
+  box-shadow: 0 4px 14px rgba(46, 33, 27, 0.08);
+}
+
+.card-media {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 12px;
+}
+
+.card-title {
+  font-family: "Source Sans 3", system-ui, sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  color: #5B3A29;
+  margin-bottom: 6px;
+}
+
+/* ===== KABAR TERBARU ===== */
+.news-card {
+  background-color: #fff;
+  border: 1px solid #E7DCCF;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.news-photo {
+  width: 100%;
+  height: 170px;
+  object-fit: cover;
+  display: block;
+}
+
+.news-body {
+  padding: 14px 16px;
+}
+
+.news-date {
+  font-size: 13px;
+  color: #C8763A;
+  font-weight: 600;
+}
+
+.news-title {
+  font-family: "Source Sans 3", system-ui, sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  color: #5B3A29;
+  margin: 4px 0 8px;
+}
+
+/* ===== MENU ===== */
+.filter-bar {
+  display: flex;
+  gap: 8px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.filter-button {
+  border: 1px solid #E7DCCF;
+  background-color: #fff;
+  color: #5B3A29;
+  padding: 8px 18px;
+  border-radius: 999px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.filter-button.is-active {
+  background-color: #C8763A;
+  border-color: #C8763A;
+  color: #fff;
+}
+
+.menu-card {
+  background-color: #fff;
+  border: 1px solid #E7DCCF;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.menu-thumb {
+  position: relative;
+}
+
+.menu-photo {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  display: block;
+}
+
+.badge-status {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background-color: #5B3A29;
+  color: #fff;
+  font-size: 12px;
+  padding: 4px 10px;
+  border-radius: 999px;
+}
+
+.menu-body {
+  padding: 14px 16px;
+}
+
+.menu-card-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 6px;
+}
+
+.menu-name {
+  font-family: "Source Sans 3", system-ui, sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  color: #2E211B;
+  margin: 0;
+}
+
+.badge-price {
+  background-color: #C8763A;
+  color: #fff;
+  font-size: 14px;
+  padding: 4px 10px;
+  border-radius: 8px;
+  white-space: nowrap;
+}
+
+.menu-desc {
+  color: #6B5B4F;
+  margin: 0;
+}
+
+.menu-empty {
+  text-align: center;
+  color: #6B5B4F;
+}
+
+/* ===== TENTANG ===== */
+.about-photo {
+  width: 100%;
+  height: auto;
+  border-radius: 16px;
+  object-fit: cover;
+}
+
+.stats {
+  list-style: none;
+  display: flex;
+  gap: 28px;
+  padding: 0;
+  margin-top: 16px;
+  flex-wrap: wrap;
+}
+
+.stat {
+  display: flex;
+  flex-direction: column;
+}
+
+.stat-number {
+  font-size: 28px;
+  color: #C8763A;
+  font-weight: 700;
+}
+
+.stat-label {
+  color: #6B5B4F;
+  font-size: 14px;
+}
+
+/* ===== JAM OPERASIONAL ===== */
+.hours-card {
+  background-color: #fff;
+  border: 1px solid #E7DCCF;
+  border-radius: 12px;
+  padding: 20px;
+}
+
+.hours-title {
+  font-size: 20px;
+  color: #5B3A29;
+  margin-bottom: 12px;
+}
+
+.hours-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.hours-table th,
+.hours-table td {
+  padding: 6px 0;
+  border-bottom: 1px solid #E7DCCF;
+  text-align: left;
+  font-weight: 400;
+}
+
+.hours-table td {
+  text-align: right;
+  color: #6B5B4F;
+}
+
+/* ===== GALERI ===== */
+.gallery-item {
+  margin: 0;
+}
+
+.gallery-item img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 12px;
+  display: block;
+}
+
+.gallery-item figcaption {
+  color: #6B5B4F;
+  font-size: 14px;
+  margin-top: 8px;
+  text-align: center;
+}
+
+/* ===== KONTAK ===== */
+.map-placeholder {
+  background-color: #EFE4D6;
+  border: 1px dashed #A9744F;
+  border-radius: 16px;
+  min-height: 260px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  text-align: center;
+  padding: 20px;
+}
+
+.map-label {
+  font-weight: 600;
+  color: #5B3A29;
+  margin: 0;
+}
+
+.map-link {
+  color: #C8763A;
+}
+
+.info-list dt {
+  font-weight: 700;
+  color: #5B3A29;
+  margin-top: 10px;
+}
+
+.info-list dd {
+  margin: 0 0 6px;
+}
+
+.contact-form {
+  max-width: 640px;
+  margin: 0 auto;
+}
+
+.form-field {
+  margin-bottom: 14px;
+  display: flex;
+  flex-direction: column;
+}
+
+.form-field label {
+  font-weight: 600;
+  margin-bottom: 6px;
+}
+
+.form-field input,
+.form-field textarea {
+  padding: 10px 12px;
+  border: 1px solid #E7DCCF;
+  border-radius: 8px;
+  font-family: inherit;
+  font-size: 16px;
+}
+
+.form-field input:focus,
+.form-field textarea:focus {
+  outline: 2px solid #C8763A;
+  border-color: #C8763A;
+}
+
+.form-success {
+  background-color: #F0E6D8;
+  color: #5B3A29;
+  padding: 12px 14px;
+  border-radius: 8px;
+  margin-top: 12px;
+  font-weight: 600;
+}
+
+.social-section {
+  text-align: center;
+}
+
+.social-links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.social-links a {
+  color: #5B3A29;
+  text-decoration: none;
+}
+
+.social-links a:hover {
+  text-decoration: underline;
+}
+
+.social-links-lg li {
+  margin: 8px 0;
+  font-size: 18px;
+}
+
+/* ===== FOOTER ===== */
+.site-footer {
+  background-color: #5B3A29;
+  color: #F0E6D8;
+  padding: 40px 0 20px;
+  margin-top: 40px;
+}
+
+.footer-logo {
+  font-family: "Playfair Display", Georgia, serif;
+  font-size: 22px;
+  color: #fff;
+  margin-bottom: 4px;
+}
+
+.footer-tagline {
+  color: #D9C6B0;
+}
+
+.footer-heading {
+  font-family: "Source Sans 3", system-ui, sans-serif;
+  font-size: 16px;
+  color: #fff;
+  margin-bottom: 10px;
+}
+
+.footer-nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-nav li {
+  margin-bottom: 6px;
+}
+
+.site-footer a {
+  color: #E7DCCF;
+  text-decoration: none;
+}
+
+.site-footer a:hover {
+  color: #fff;
+  text-decoration: underline;
+}
+
+.footer-address {
+  font-style: normal;
+  line-height: 1.7;
+}
+
+.footer-bottom {
+  border-top: 1px solid #7A5A47;
+  margin-top: 24px;
+  padding-top: 16px;
+  text-align: center;
+  color: #D9C6B0;
+  font-size: 14px;
+}
+
+/* ===== RESPONSIF (mobile-first: aturan di bawah untuk layar besar) ===== */
+@media (min-width: 992px) {
+  .hero-title {
+    font-size: 40px;
+  }
+  .section-title {
+    font-size: 32px;
+  }
+}
+
+/* Layar kecil: tampilkan hamburger, sembunyikan daftar menu sampai dibuka */
+@media (max-width: 991px) {
+  .nav-toggle {
+    display: flex;
+  }
+  .nav-links {
+    display: none;
+    width: 100%;
+    flex-direction: column;
+    gap: 4px;
+    margin-top: 12px;
+  }
+  .nav-links.is-open {
+    display: flex;
+  }
+}

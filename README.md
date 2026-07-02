@@ -51,4 +51,4 @@ npm run build    # build untuk produksi
 
 ## Demo Live
 
-Aplikasi dapat diakses secara live di Vercel: _(tautan menyusul setelah deploy)_.
+Aplikasi dapat diakses secara live di Vercel: https://brewgram-studio.vercel.app

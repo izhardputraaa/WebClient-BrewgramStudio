@@ -49,6 +49,8 @@ npm run dev      # jalankan server pengembangan
 npm run build    # build untuk produksi
 ```
 
-## Demo Live
+## Tautan Proyek
 
-Aplikasi dapat diakses secara live di Vercel: https://brewgram-studio.vercel.app
+- Demo Live (Vercel): https://brewgram-studio.vercel.app
+- Desain Figma (Hi-Fi): https://www.figma.com/design/yExDxIUTijU2T62f33Ne28
+- Slide Presentasi (Canva): https://www.canva.com/d/wfpCJL3UZwe3Oa3
